@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+h4 {
+  padding: 10px;
+}
+
+div {
+  border-radius: 20px;
+}
+
+#headerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+#formSection {
+  background-image: url(./dublin-skyline.jpg);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+#formSection div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+#detailsSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px;
+}
+
+#detailsSection div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  width: 200px;
+  height: auto;
+}
+
+table {
+  background-color: gray;
+  padding: 50px;
+}
+
+table tr {
+  background-color: rgb(109, 109, 200);
+  width: 100%;
+}
+
+form {
+  background-color: gray;
+  padding: 20px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="headerSection">
+    <h1>Weather forecast for Dublin</h1>
+    <p>By default, a weather summary and the minimum and maximum temperature for each day will be shown</p>
+  </section>
+  <section id="formSection">
+    <div>
+      <form id="forecastForm" onsubmit="formSubmit(); return false;">
+        <label>Days to display:</label>
+        <input name="input" id="input" type="number" placeholder="Number of days (0-5)">
+        <button type="submit">Show forecast</button>
+      </form>  
+      <div id="addDetails">
+        <h4>Additional details:</h4>
+        <label for="pressure">Pressure:</label>
+        <input type="checkbox" id="pressure" name="pressure" onchange="changeStyle('pressure', 'pressureCol')">
+        <label for="humidity">Humidity:</label>
+        <input type="checkbox" id="humidity" name="humidity" onchange="changeStyle('humidity', 'humidityCol')">
+        <label for="speed">Speed:</label>
+        <input type="checkbox" id="speed" name="speed" onchange="changeStyle('speed', 'speedCol')">
+      </div>
+      <table id="table">
+        <colgroup>
+          <col>
+          <col>
+          <col>
+          <col>
+          <col>
+          <col id="pressureCol" style="visibility: collapse">
+          <col id="humidityCol" style="visibility: collapse">
+          <col id="speedCol" style="visibility: collapse">
+          <col>
+        </colgroup>
+        <tr id="attributesRow">
+          <thead>
+            <th>Day</th>
+            <th>Summary</th>
+            <th>Icon</th>
+            <th>Min temp</th>
+            <th>Max temp</th>
+            <th>Pressure</th>
+            <th>Humidity</th>
+            <th>Wind speed</th>
+            <th>Details</th>
+          </thead>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section id="detailsSection">
+  </section>
+</body>
+<script src="./index.js"></script>
+</html>
